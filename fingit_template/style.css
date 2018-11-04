@@ -1,0 +1,482 @@
+ *{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background:#eee;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.brand span a{
+    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    font-size: 24px !important;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 20px;
+    color: #76b51b !important;
+
+}
+
+.brand span a:hover{
+    color: #4183c4;
+}
+
+.bar-info{
+    position: relative;
+    background-color: rgb(61, 61, 61);
+    text-align: center;
+    padding: 10px;
+    overflow: hidden;
+}
+ 
+.bar-info .social-info a{
+    margin: 2px 5px;
+    color: #fff;
+    font-size: 14px;
+
+}
+
+.social-info {
+    opacity: 0.6;;
+}
+
+.whatsapp-info {
+    margin-left:80px;
+}
+
+.linkedin-icon {
+    margin-right:80px;
+}
+
+.bar-info .social-info a:hover{
+    color:#b1a9a9c2;
+}
+
+.content-form-sub{
+    position: absolute;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #575D69;
+    border-radius: 3px;
+    top:0;
+    right: -320px;
+    z-index: 2;
+}
+
+
+.nav-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    background-color: rgb(61, 61, 61);
+    z-index: 10;
+}
+
+.nav-fixed ul {
+    background-color: rgb(61, 61, 61);
+}
+
+.nav-fixed ul li a{  
+    font-size: 16px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    /* font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive; */
+    
+}
+
+.align-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.nav-fixed ul li:hover{
+    background-color: rgb(61, 61, 61);
+    border-bottom: 3px solid #fff; 
+}
+
+
+.navbar {
+    background-color: #eee;
+    height: 65px;
+}
+
+.navbar li{
+    display: inline-block;
+    padding: 20px;
+    border-bottom: 3px solid transparent; 
+}
+
+.navbar li:hover{
+    background: #eee;
+    border-bottom: 3px solid #111; 
+}
+
+
+.navbar li.brand:hover  {
+    border-bottom: 2px solid transparent; 
+}
+
+.navbar li a{  
+    font-size: 16px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #111;
+    font-weight: 400;
+    /* font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive; */
+    
+}
+
+.blog-button{
+    margin-right: 10px;
+}
+
+li.blog-button:hover {
+    border-bottom: 2px solid transparent;
+}
+
+.right{
+    float: right;
+}
+
+.left{
+    float: left;
+}
+
+#slider, .slideshow, .slide-content{
+    width: 100%;
+    height: 83vh;;
+}
+
+.slideshow{position: relative}
+
+.slide{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide1{background-image: url('img/study.jpeg')}
+.slide2{background-image: url('img/two.jpeg')}
+.slide3{background-image: url('img/map.jpeg')}
+/* .slide4{background-image: url('../img/internet2.jpg')} */
+/* .slide4{background-image: url('../img/internet3.jpg')} */
+/* .slide4{background-image: url('../img/internet4.png')} */
+.slide4{background-image: url('img/a.jpeg')}
+
+.slide-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.slide-content span.slide-content-brand{
+    font-size: 4rem;
+    color: white;
+    z-index: 2;
+    font-family: "Kaushan Script";
+    margin-bottom: 20px;
+}
+
+.slide-content span.slide-content-top{
+    font-size: 3rem;
+    color: white;
+    z-index: 2;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+.slide-content span.slide-content-medium{
+    font-size: 18px;
+    color: white;
+    z-index: 2;
+    font-family: "Kaushan Script";
+    margin: 10px 100px;
+}
+
+  
+.f-segoe{
+    font-size: 18px !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+.read-more-button {
+    margin: 20px;
+}
+.pag-icon {
+    position: absolute;
+    top: 70vh;
+    left: 46%;
+    z-index: 3;
+}
+
+.pag-icon .circle{
+    cursor: pointer;
+    color: #f4f4f4;
+}
+
+
+.slide-content span.slide-content-bottom{
+    font-size: 1rem;
+    color: white;
+    z-index: 2;
+    font-family: "Kaushan Script";
+
+}
+
+.arrow{
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    margin-top: -32px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    display: none;
+    z-index: 4;
+    opacity: 0.4;
+}
+
+#arrow-left{
+    border-width: 10px 15px 10px 0;
+    margin-left: 10px;
+    border-color: transparent white;
+    left: 0;
+}
+
+#arrow-right{
+    border-width: 10px 0 10px 15px;
+    margin-right: 10px;
+    border-color: transparent transparent transparent white;
+    right: 0;
+}
+.slideshow:hover > .arrow{
+    display: block;
+}
+
+.header-overlay{
+    height: 83vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #232a2e;
+    z-index: 1;
+    opacity: 0.65;
+}
+
+/* side nav */
+
+.side-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.2s;
+    z-index: 8;
+}
+
+.side-nav .side-navbar{
+    width: 320px;
+    height: 100%;
+    background: #f4f4f4;
+    list-style: none;
+    position: absolute;
+    top: 40px;
+    left: -320px;
+    transition: left .3s;
+}
+
+.side-nav .side-navbar a:hover{
+    background: #76b51b;
+    color: #fff;
+    opacity: 0.6;
+}
+
+.side-nav .side-navbar a.brand:hover{
+    background: transparent;
+    opacity: 0.8;
+}
+
+
+.side-nav span.side-nav-icon{
+    position: absolute;
+    width: 0vh;
+    height: 40px;
+    background-color: rgb(61, 61, 61);
+}
+
+
+.side-nav span.side-nav-icon{
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.side-nav span.side-nav-icon i.icon{
+    cursor: pointer;
+}
+
+
+.side-nav .side-navbar li.side-nav-brand{
+    padding-top: 15px;
+    text-align: center;
+   
+}
+
+.side-nav .side-navbar li.side-nav-brand span a{
+    text-decoration: none;
+    font-size: 22px;
+    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive; 
+    color: #76b51b;
+    padding: 40px
+}
+
+.side-nav .side-navbar  a{
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid #C6D0DA;
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #33303091;
+}
+
+#services {
+    padding-top: 150px;
+    background-color: #fff;
+}
+
+.section-heading {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.strong-text {
+    color: #fec503;
+}
+
+.text1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-muted {
+    color: #777;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.75;
+    margin-bottom: 60px;
+    margin: 0 0 10px;
+}
+
+.service-heading {
+    margin: 15px 0;
+    text-transform: none;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #333;
+}
+
+.fa-wordpress:before {
+    content: "\f19a";
+}
+
+#about {
+    margin: 100px;
+}
+
+.primary-social-bar {
+    margin-left: 100px;
+}
+#contact {
+    text-align: center;
+    background-color: #fff;
+}
+
+section#contact {
+    background-color: #222;
+    background-image: url(../img/map-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 768px){
+    section {
+        padding: 80px 0;
+    }
+}
+
+@media(max-width: 700px){
+    .bar-info .social-info a{
+        color: #fff;
+        font-size: 12px;
+    }
+    .social-secundary{
+        display: none;
+    }
+
+
+
+}
+
+@media(max-width: 600px){
+    .slide-content{
+        line-height: 1.1;
+    }
+    .slide-content span.slide-content-medium{
+        margin: 20px;
+    }
+
+    .slide-content span.slide-content-top{
+        font-size: 2rem;
+    }
+
+    .slide-content span.slide-content-medium {
+        font-size: 14px;
+    }
+   
+    nav.nav {
+        display: none;
+    }
+    .pag-icon {
+        position: absolute;
+        top: 70vh;
+        left: 38%;
+        z-index: 3;
+    }
+    .side-nav {
+        display: block;
+    }
+    
+    #about {
+        margin: 30px;
+    }
+
+    .primary-social-bar {
+        margin: 0;
+        display: inline-block;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+}
